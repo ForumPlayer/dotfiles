@@ -1,0 +1,3 @@
+[submodule ".byobu/plugins/tpm"]
+	path = .byobu/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm

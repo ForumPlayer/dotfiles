@@ -1,0 +1,4 @@
+function termsg() { 
+    if [ "$1" == "brb" ]; then dialog --infobox "Be Right Back" 3 17 && sleep 1d; fi
+    if [ "$1" == "brb-5m" ]; then dialog --infobox "I'll be back in 5 min" 3 25 && sleep 1d; fi
+}

@@ -1,0 +1,7 @@
+#which template &>/dev/null && function template() { $(which template) $* && echo "[$(date)] : template $*" >> ~/.log/cmd/template.txt; }
+
+which apt &>/dev/null && function apt() { $(which apt) $* && if [ "$1" == "install" ] || [ "$1" == "remove" ] || [ "$1" == "purge" ]; then echo "[$(date)] : apt $*" >> ~/.log/cmd/apt.txt; fi;}
+which apt-get &>/dev/null && function apt-get() { $(which apt) $* && if [ "$1" == "install" ] || [ "$1" == "remove" ] || [ "$1" == "purge" ]; then echo "[$(date)] : apt-get $*" >> ~/.log/cmd/apt.txt; fi;}
+which dpkg &>/dev/null && function dpkg() { $(which dpkg) $* && echo "[$(date)] : dpkg $*" >> ~/.log/cmd/dpkg.txt; }
+
+which docker &>/dev/null && function docker() { $(which docker) $* && echo "[$(date)] : docker $*" >> ~/.log/cmd/docker.txt; }

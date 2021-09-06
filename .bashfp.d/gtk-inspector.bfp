@@ -1,0 +1,2 @@
+alias gtk-inspector-enable='gsettings set org.gtk.Settings.Debug enable-inspector-keybinding true'
+alias gtk-inspector-disable='gsettings set org.gtk.Settings.Debug enable-inspector-keybinding false'

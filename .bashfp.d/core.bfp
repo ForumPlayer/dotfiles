@@ -1,0 +1,49 @@
+################################################## 
+
+if [ -d ~/.bashfp.d/completion.bfp.d ]; then
+  for i in ~/.bashfp.d/completion.bfp.d/*.bfp; do
+    if [ -r $i ]; then
+      . $i
+    fi
+  done
+  unset i
+fi
+
+################################################## 
+
+if [ -z "$DISPLAY" ]; then export DISPLAY=:0; fi
+if [ "$USER" == "root" ]; then alias sudo=''; fi
+export EDITOR=nano
+
+################################################## 
+
+alias less='less -RS'
+alias ll='ls -auxl --group-directories-first'
+alias lls='ls -auxl --group-directories-first --color=always | less'
+alias wget='wget -nv --show-progress -c'
+alias egrepc='egrep --color=always'
+alias grepc='grep --color=always' 
+
+
+alias xcl='xclip -sel c'
+
+################################################## 
+
+function dfh () { df -h 2>/dev/null | egrep "(.*\A.*|^\/dev\/(s|v)d[a-z][0-9])"; }
+function get_epoch() { if [ -n "$*" ]; then date +%s -d "$*"; else date +%s; fi; }
+function flush-log() { rm -v /var/log/*.gz; }
+function reload_bash() { source ~/.bashrc; }
+
+##################################################
+
+function man() {
+    env \
+    LESS_TERMCAP_mb="$(printf "\e[1;31m")" \
+    LESS_TERMCAP_md="$(printf "\e[1;31m")" \
+    LESS_TERMCAP_me="$(printf "\e[0m")" \
+    LESS_TERMCAP_se="$(printf "\e[0m")" \
+    LESS_TERMCAP_so="$(printf "\e[1;44;33m")" \
+    LESS_TERMCAP_ue="$(printf "\e[0m")" \
+    LESS_TERMCAP_us="$(printf "\e[1;32m")" \
+    man "${@}"
+}

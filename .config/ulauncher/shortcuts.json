@@ -1,0 +1,62 @@
+{
+    "d907567d-df92-4e7c-adfc-fb881f58c408": {
+        "id": "d907567d-df92-4e7c-adfc-fb881f58c408",
+        "name": "Copy to clipoard",
+        "keyword": "#",
+        "cmd": "echo -n \"$*\" | xclip -sel c",
+        "icon": "/.VolumeIcon.png",
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1628263424.8386896
+    },
+    "734c36bd-44f1-4224-92cf-001ba237b2f9": {
+        "id": "734c36bd-44f1-4224-92cf-001ba237b2f9",
+        "name": "DroidCam (CLI) via ADB",
+        "keyword": "dc",
+        "cmd": "droidcam-cli -v adb 4747",
+        "icon": "/opt/droidcam-icon.png",
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1628695604.652872
+    },
+    "f6be8eda-0d26-4aaf-948b-1a1242bcecff": {
+        "id": "f6be8eda-0d26-4aaf-948b-1a1242bcecff",
+        "name": "Scrcpy (A71)",
+        "keyword": "a71",
+        "cmd": "/usr/local/bin/scrcpy -b2M -m1280 --max-fps 30 -s ***********",
+        "icon": "~/.local/share/icons/WhiteSur/apps/scalable/preferences-kde-connect.svg",
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1628696246.7523775
+    },
+    "ee154226-b313-4f23-bddd-e3a618a0a975": {
+        "id": "ee154226-b313-4f23-bddd-e3a618a0a975",
+        "name": "Scrcpy (J5)",
+        "keyword": "j5",
+        "cmd": "/usr/local/bin/scrcpy -b6M -m1280 --max-fps 30 -s *****************",
+        "icon": "~/.local/share/icons/WhiteSur/apps/scalable/preferences-kde-connect.svg",
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1628696276.3870313
+    },
+    "8ec7bc7b-4f89-4f7b-9f0a-05ce8d979411": {
+        "id": "8ec7bc7b-4f89-4f7b-9f0a-05ce8d979411",
+        "name": "Fast copy-paste",
+        "keyword": "fcp",
+        "cmd": "cat ~/.fcp.tmp | xclip -sel c",
+        "icon": "/.VolumeIcon.png",
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1628704270.1615489
+    },
+    "451c5c55-fb84-4200-a9f0-aa3ce4bd7866": {
+        "id": "451c5c55-fb84-4200-a9f0-aa3ce4bd7866",
+        "name": "DuckDuckGo",
+        "keyword": "!",
+        "cmd": "https://duckduckgo.com/?q=!%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1630350718.0089848
+    }
+}
