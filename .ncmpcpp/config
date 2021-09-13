@@ -1,0 +1,8 @@
+#ncmpcpp_directory = "~/.ncmpcpp"
+mpd_host = "/run/user/1000/mpd/socket"
+user_interface = "alternative"
+enable_window_title = "yes"
+mouse_list_scroll_whole_page = "no"
+mouse_support = "yes"
+cyclic_scrolling = "yes"
+#execute_on_song_change = notify-send "Now Playing" "$(mpc --format '%title% \n%artist% - %album%' current)"
