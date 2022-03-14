@@ -1,0 +1,20 @@
+[init]
+	defaultBranch = main
+[user]
+	email = fp@forumplayer.dev
+	name = ForumPlayer
+[commit]
+	gpgsign = true
+[core]
+	pager = less
+	editor = nano
+[alias]
+	cm = commit
+	pl = pull
+	st = status
+	ch = checkout
+	cl = clone
+	clm = clone --single-branch --depth=1
+	upd = add --update
+	unadd = checkout --
+	empty-commit = commit --allow-empty
